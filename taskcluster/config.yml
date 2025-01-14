@@ -30,7 +30,7 @@ workers:
             provisioner: scriptworker-k8s
             implementation: scriptworker-signing
             os: scriptworker
-            worker-type: mobile-t-signing
+            worker-type: mobile-t-signing-dev
         images:
             provisioner: 'mobile-{level}'
             implementation: docker-worker
@@ -53,7 +53,7 @@ workers:
             worker-type:
                 by-level:
                     "3": mobile-3-signing
-                    default: mobile-t-signing
+                    default: mobile-t-signing-dev
         t-bitbar.*:
             provisioner: proj-autophone
             implementation: generic-worker
